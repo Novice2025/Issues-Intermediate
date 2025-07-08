@@ -89,6 +89,26 @@
             margin-left: 0.5rem;
             color: var(--secondary-blue);
         }
+
+        .toc-link {
+            display: block;
+            padding: 0.25rem 0;
+            color: var(--dark-text);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .toc-link:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+
+        .toc-section-title {
+            color: var(--secondary-blue);
+            font-weight: bold;
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
     </style>
 </head>
 <body class="p-4 md:p-8">
@@ -104,6 +124,65 @@
             Created by Daby @2025
         </p>
 
+        <!-- Table of Contents Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2" id="table-of-contents">Table of Contents 📋</h2>
+        <div class="mb-12 p-4 bg-blue-50 rounded-lg shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                <div>
+                    <h3 class="toc-section-title">Expressions & Nouns</h3>
+                    <a href="#problem-term" class="toc-link">Problem</a>
+                    <a href="#error-term" class="toc-link">Error</a>
+                    <a href="#concern-term" class="toc-link">Concern</a>
+                    <a href="#setback-term" class="toc-link">Setback</a>
+                    <a href="#bottleneck-term" class="toc-link">Bottleneck</a>
+                    <a href="#glitch-term" class="toc-link">Glitch</a>
+                    <a href="#dilemma-term" class="toc-link">Dilemma</a>
+                    <a href="#complication-term" class="toc-link">Complication</a>
+                    <a href="#impediment-term" class="toc-link">Impediment</a>
+                    <a href="#breakdown-term" class="toc-link">Breakdown</a>
+                    <a href="#difficulty-term" class="toc-link">Difficulty</a>
+                    <a href="#snag-term" class="toc-link">Snag</a>
+                    <a href="#hitch-term" class="toc-link">Hitch</a>
+                    <a href="#big-deal-term" class="toc-link">Big Deal</a>
+                    <a href="#informal-expressions" class="toc-link">Informal & Direct Expressions</a>
+                    <a href="#synonyms-table" class="toc-link">Synonyms for Problem Table</a>
+                </div>
+                <div>
+                    <h3 class="toc-section-title">Verbs & Phrasal Verbs</h3>
+                    <a href="#have-term" class="toc-link">Have</a>
+                    <a href="#see-term" class="toc-link">See</a>
+                    <a href="#there-is-are-term" class="toc-link">There is/are</a>
+                    <a href="#identify-issues-term" class="toc-link">Identify issues</a>
+                    <a href="#encounter-face-term" class="toc-link">Encounter/Face</a>
+                    <a href="#solve-term" class="toc-link">Solve</a>
+                    <a href="#fix-term" class="toc-link">Fix</a>
+                    <a href="#rectify-term" class="toc-link">Rectify</a>
+                    <a href="#resolve-term" class="toc-link">Resolve</a>
+                    <a href="#deal-with-term" class="toc-link">Deal with</a>
+                    <a href="#work-out-term" class="toc-link">Work out</a>
+                    <a href="#troubleshoot-term" class="toc-link">Troubleshoot</a>
+                    <a href="#come-up-with-term" class="toc-link">Come up with</a>
+                    <a href="#overcome-term" class="toc-link">Overcome</a>
+                    <a href="#remain-unsolved-term" class="toc-link">Remain unsolved</a>
+                    <a href="#mitigate-term" class="toc-link">Mitigate</a>
+                    <a href="#address-problem-term" class="toc-link">Address (a problem)</a>
+                    <a href="#implement-solution-term" class="toc-link">Implement (a solution)</a>
+                    <a href="#brainstorm-solutions-term" class="toc-link">Brainstorm (solutions)</a>
+                    <a href="#escalate-problem-term" class="toc-link">Escalate (a problem)</a>
+                    <a href="#prioritize-issues-term" class="toc-link">Prioritize (issues)</a>
+                    <a href="#seek-clarification-term" class="toc-link">Seek clarification</a>
+                    <a href="#experiencing-term" class="toc-link">Experiencing</a>
+                    <a href="#enduring-term" class="toc-link">Enduring</a>
+                    <a href="#go-through-term" class="toc-link">Go through</a>
+                    <a href="#i-will-fix-you-term" class="toc-link">I will fix you</a>
+                    <h3 class="toc-section-title mt-4">Positive Outcomes & Achievements</h3>
+                    <a href="#achieve-term" class="toc-link">Achieve</a>
+                    <a href="#progress-term" class="toc-link">Progress</a>
+                    <a href="#succeed-term" class="toc-link">Succeed</a>
+                </div>
+            </div>
+        </div>
+
         <!-- Understanding the Language of Problems Section -->
         <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2">Understanding the Language of Problems 🧐</h2>
         <p class="text-light-text mb-8">
@@ -111,7 +190,7 @@
         </p>
 
         <!-- Vocabulary Term: Problem -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Problem</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="problem"></i>
@@ -140,7 +219,7 @@
         </div>
 
         <!-- Vocabulary Term: Error -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="error-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Error</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="error"></i>
@@ -169,7 +248,7 @@
         </div>
 
         <!-- Vocabulary Term: Concern -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="concern-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Concern</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="concern"></i>
@@ -203,7 +282,7 @@
         </div>
 
         <!-- Vocabulary Term: Setback -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="setback-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Setback</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="setback"></i>
@@ -232,7 +311,7 @@
         </div>
 
         <!-- Vocabulary Term: Bottleneck -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="bottleneck-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Bottleneck</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="bottleneck"></i>
@@ -261,7 +340,7 @@
         </div>
 
         <!-- Vocabulary Term: Glitch -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="glitch-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Glitch</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="glitch"></i>
@@ -290,7 +369,7 @@
         </div>
 
         <!-- Vocabulary Term: Dilemma -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="dilemma-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Dilemma</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="dilemma"></i>
@@ -319,7 +398,7 @@
         </div>
 
         <!-- Vocabulary Term: Complication -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="complication-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Complication</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="complication"></i>
@@ -348,7 +427,7 @@
         </div>
 
         <!-- Vocabulary Term: Impediment -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="impediment-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Impediment</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="impediment"></i>
@@ -377,7 +456,7 @@
         </div>
 
         <!-- Vocabulary Term: Breakdown -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="breakdown-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Breakdown</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="breakdown"></i>
@@ -406,7 +485,7 @@
         </div>
 
         <!-- Vocabulary Term: Difficulty -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="difficulty-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Difficulty</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="difficulty"></i>
@@ -435,7 +514,7 @@
         </div>
 
         <!-- Vocabulary Term: Snag -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="snag-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Snag</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="snag"></i>
@@ -464,7 +543,7 @@
         </div>
 
         <!-- Vocabulary Term: Hitch -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="hitch-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Hitch</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="hitch"></i>
@@ -493,7 +572,7 @@
         </div>
 
         <!-- Vocabulary Term: Big Deal -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="big-deal-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Big Deal</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="big deal"></i>
@@ -529,7 +608,7 @@
         </p>
 
         <!-- Vocabulary Term: Have -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="have-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Have</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="have"></i>
@@ -558,7 +637,7 @@
         </div>
 
         <!-- Vocabulary Term: See -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="see-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: See</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="see"></i>
@@ -587,7 +666,7 @@
         </div>
 
         <!-- Vocabulary Term: There is/are -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="there-is-are-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: There is/are</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="there is"></i>
@@ -616,7 +695,7 @@
         </div>
 
         <!-- Vocabulary Term: Identify issues -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="identify-issues-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Identify issues</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="identify issues"></i>
@@ -645,7 +724,7 @@
         </div>
 
         <!-- Vocabulary Term: Encounter/Face -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="encounter-face-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Encounter/Face (a problem)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="encounter"></i>
@@ -675,7 +754,7 @@
         </div>
 
         <!-- Vocabulary Term: Solve -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="solve-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Solve</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="solve"></i>
@@ -704,7 +783,7 @@
         </div>
 
         <!-- Vocabulary Term: Fix -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="fix-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Fix</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="fix"></i>
@@ -733,7 +812,7 @@
         </div>
 
         <!-- Vocabulary Term: Rectify -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="rectify-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Rectify</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="rectify"></i>
@@ -762,7 +841,7 @@
         </div>
 
         <!-- Vocabulary Term: Resolve -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="resolve-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Resolve</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="resolve"></i>
@@ -791,7 +870,7 @@
         </div>
 
         <!-- Vocabulary Term: Deal with -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="deal-with-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Deal with</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="deal with"></i>
@@ -820,7 +899,7 @@
         </div>
 
         <!-- Vocabulary Term: Work out -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="work-out-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Work out</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="work out"></i>
@@ -849,7 +928,7 @@
         </div>
 
         <!-- Vocabulary Term: Troubleshoot -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="troubleshoot-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Troubleshoot</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="troubleshoot"></i>
@@ -878,7 +957,7 @@
         </div>
 
         <!-- Vocabulary Term: Come up with -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="come-up-with-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Come up with</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="come up with"></i>
@@ -910,7 +989,7 @@
         <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12">Additional Phrases for Problem-Solving ✅</h2>
 
         <!-- Vocabulary Term: Overcome -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="overcome-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Overcome</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="overcome"></i>
@@ -939,7 +1018,7 @@
         </div>
 
         <!-- Vocabulary Term: Remain unsolved -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="remain-unsolved-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Remain unsolved</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="remain unsolved"></i>
@@ -968,7 +1047,7 @@
         </div>
 
         <!-- Vocabulary Term: Mitigate -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="mitigate-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Mitigate</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="mitigate"></i>
@@ -997,7 +1076,7 @@
         </div>
 
         <!-- Vocabulary Term: Address (a problem) -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="address-problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Address (a problem)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="address"></i>
@@ -1026,7 +1105,7 @@
         </div>
 
         <!-- Vocabulary Term: Implement (a solution) -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="implement-solution-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Implement (a solution)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="implement"></i>
@@ -1055,7 +1134,7 @@
         </div>
 
         <!-- Vocabulary Term: Brainstorm (solutions) -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="brainstorm-solutions-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Brainstorm (solutions)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="brainstorm"></i>
@@ -1068,7 +1147,7 @@
                 <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Your team is brainstorming ideas for a new marketing campaign.</p>
                 <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
                     <li><strong class="text-primary-blue">Example 1:</strong> "Let's <strong class="term-title">brainstorm</strong> some innovative solutions for reducing operational costs."</li>
-                    <li><strong class="term-title">Example 2 (Brazil Context):</strong> Em uma reunião criativa: "Vamos <strong class="term-title">fazer um brainstorming</strong> para encontrar novas abordagens para o marketing." (Let's <strong class="term-title">brainstorm</strong> to find new marketing approaches.)</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião criativa: "Vamos <strong class="term-title">fazer um brainstorming</strong> para encontrar novas abordagens para o marketing." (Let's <strong class="term-title">brainstorm</strong> to find new marketing approaches.)</li>
                 </ul>
                 <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Brainstorm" is a widely used term for collaborative idea generation, especially in the early stages of problem-solving or project planning.</p>
                 <div class="mt-6 border-t pt-4">
@@ -1084,7 +1163,7 @@
         </div>
 
         <!-- Vocabulary Term: Escalate (a problem) -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="escalate-problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Escalate (a problem)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="escalate"></i>
@@ -1113,7 +1192,7 @@
         </div>
 
         <!-- Vocabulary Term: Prioritize (issues) -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="prioritize-issues-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Prioritize (issues)</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="prioritize"></i>
@@ -1142,7 +1221,7 @@
         </div>
 
         <!-- Vocabulary Term: Seek clarification -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="seek-clarification-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Seek clarification</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="seek clarification"></i>
@@ -1171,7 +1250,7 @@
         </div>
 
         <!-- Vocabulary Term: Experiencing -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="experiencing-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Experiencing</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="experiencing"></i>
@@ -1200,7 +1279,7 @@
         </div>
 
         <!-- Vocabulary Term: Enduring -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="enduring-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Enduring</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="enduring"></i>
@@ -1229,7 +1308,7 @@
         </div>
 
         <!-- Vocabulary Term: Go through -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="go-through-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Go through</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="go through"></i>
@@ -1258,7 +1337,7 @@
         </div>
 
         <!-- Vocabulary Term: I will fix you -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="i-will-fix-you-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: I will fix you</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="I will fix you"></i>
@@ -1305,13 +1384,13 @@
 
 
         <!-- Informal & Direct Expressions Section -->
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12">Informal & Direct Expressions (Use with Caution!) ⚠️</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12" id="informal-expressions">Informal & Direct Expressions (Use with Caution!) ⚠️</h2>
         <p class="text-light-text mb-8">
             These phrases are highly informal and can be perceived as aggressive or unprofessional in a work environment. They are generally best avoided in professional communication.
         </p>
 
         <!-- Vocabulary Term: What's the matter with you? -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="whats-the-matter-with-you-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: What's the matter with you?</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="what's the matter with you"></i>
@@ -1339,7 +1418,7 @@
         </div>
 
         <!-- Vocabulary Term: What is the heck/hell wrong with you? -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="what-is-the-heck-hell-wrong-with-you-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: What is the heck/hell wrong with you?</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="what is the heck wrong with you"></i>
@@ -1367,7 +1446,7 @@
         </div>
 
         <!-- Vocabulary Term: Are you out of your mind? -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="are-you-out-of-your-mind-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Are you out of your mind?</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="are you out of your mind"></i>
@@ -1396,7 +1475,7 @@
 
 
         <!-- Synonyms for Problem Table -->
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12">Synonyms for Problem: Nuances and Usage 📚</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12" id="synonyms-table">Synonyms for Problem: Nuances and Usage 📚</h2>
         <p class="text-light-text mb-8">
             While "problem" is a versatile term, English offers many synonyms that can convey more specific nuances. Understanding these can help you choose the most precise word for your professional communication.
         </p>
@@ -1513,7 +1592,7 @@
         </p>
 
         <!-- Vocabulary Term: Achieve -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="achieve-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Achieve</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="achieve"></i>
@@ -1542,7 +1621,7 @@
         </div>
 
         <!-- Vocabulary Term: Progress -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="progress-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Progress</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="progress"></i>
@@ -1572,7 +1651,7 @@
         </div>
 
         <!-- Vocabulary Term: Succeed -->
-        <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+        <div id="succeed-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
             <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
                 <span class="text-xl font-semibold term-title">Term: Succeed</span>
                 <i class="fas fa-volume-up pronunciation-icon" data-term="succeed"></i>
